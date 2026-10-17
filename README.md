@@ -1,43 +1,43 @@
-## Hi, I'm Rachid 👋
+### Rachid
 
-**Full stack developer · Big Data & AI** · Morocco 🇲🇦
+Full stack developer from Morocco, with a background in big data and machine learning.
 
-I build complete products: a React front end, a tested API, the data pipeline behind it, and the
-machine learning models on top. I care about the parts users don't see: correct money math,
-transactions that can't double-sell stock, idempotent APIs, tests at every layer, and CI.
+I hold a Bachelor of Technology in Big Data from EST Fkih Ben Salah and a Diplôme de Développement
+Digital from ISTA Tiznit. Before graduating, I did a three-month internship at OCP Group in
+Khouribga, working on predictive maintenance and IT incident classification.
 
-- 🎓 Bachelor of Technology in Big Data, EST Fkih Ben Salah (Université Sultan Moulay Slimane)
-- 🎓 Diplôme de Développement Digital, ISTA Tiznit
-- 🏭 End-of-studies internship at **OCP Group** (Khouribga): predictive maintenance platform and IT incident classification with ML/DL
-- 🔎 Open to full stack, data engineering and ML engineering roles
+Most of what I build is a web app with a data or ML part behind it. I'm looking for a full stack,
+data engineering or ML engineering role.
 
----
+#### Projects
 
-### Featured projects
+**[ecommerce-analytics-platform](https://github.com/bijigunerachid/ecommerce-analytics-platform)**
+An e-commerce back office where every change (orders, stock, customers) is published to Kafka and
+processed by Spark Structured Streaming. Events go through a transactional outbox, aggregates are
+deduplicated by event id so the dashboard stays exact when Kafka redelivers, and a few simple
+detectors flag unusual orders and stock write-offs.
+React, Express, PostgreSQL, Kafka, PySpark, Prometheus, Grafana.
 
-| Project | What it is | Stack |
-|---|---|---|
-| **[Real-Time E-Commerce Analytics](https://github.com/bijigunerachid/ecommerce-analytics-platform)** | Operations app where every business event flows through Kafka into Spark Structured Streaming: live dashboards, exactly-once aggregates, anomaly detection, ~350 tests | React · Node/Express · PostgreSQL · Kafka · Spark · Prometheus/Grafana |
-| **[B2B Management Platform](https://github.com/bijigunerachid/b2b-management-platform)** | Back office and client portal for a wholesale distributor: quotes, VAT invoices in MAD, receivables, stock ledger. Three ML models (demand forecast, late-payment risk, recommendations) and a help assistant in English, French and Arabic | React · Node/Express · MySQL · scikit-learn · Docker |
-| **[Vendora: Multi-Tenant E-Commerce SaaS](https://github.com/bijigunerachid/Multi-Tenant-E-Commerce-Management-SaaS)** | SaaS where independent businesses run their stores with strict tenant isolation and role-based access. *In progress* | React · Express · Prisma · PostgreSQL · Redis · Playwright |
-| **[ISIC Skin Lesion Segmentation](https://github.com/bijigunerachid/Segmentation-ISIC-)** | U-Net vs SegNet vs DeepLabV3 on ISIC 2018. Best Dice: **0.903** | PyTorch · Streamlit |
-| **[CardioRisk AI](https://github.com/bijigunerachid/heart-disease-ml-dl-project)** | Heart disease risk prediction: seven ML models plus a neural network, served in a Streamlit app | scikit-learn · XGBoost · PyTorch · Streamlit |
+**[b2b-management-platform](https://github.com/bijigunerachid/b2b-management-platform)**
+A back office for a wholesale distributor, plus a portal where its clients order directly. Quotes,
+invoices with Moroccan VAT, partial payments, receivables, purchase orders and a stock ledger.
+It has three models trained on the order history: a 4-week demand forecast used for reordering,
+a late-payment risk score, and product recommendations.
+React, Express, MySQL, scikit-learn.
 
----
+**[Vendora](https://github.com/bijigunerachid/Multi-Tenant-E-Commerce-Management-SaaS)** (in progress)
+A multi-tenant SaaS where several businesses manage their stores on one platform, with strict
+tenant isolation and role-based access. Catalog, inventory, customers and
+orders work; reports and background jobs are next.
+React, Express, Prisma, PostgreSQL, Redis.
 
-### Tech I work with
+**[Segmentation-ISIC-](https://github.com/bijigunerachid/Segmentation-ISIC-)**
+Skin lesion segmentation on ISIC 2018, comparing U-Net, SegNet and DeepLabV3. DeepLabV3 reached
+a Dice score of 0.903 on the test set.
+PyTorch, Streamlit.
 
-- **Front end:** React · Vite · Tailwind CSS · TanStack Query
-- **Back end:** Node.js · Express · FastAPI · Django · Prisma
-- **Data:** PostgreSQL · MySQL · MongoDB · Redis
-- **Big Data:** Apache Kafka · Apache Spark · HDFS · Parquet
-- **ML / AI:** scikit-learn · XGBoost · PyTorch · LLM integration
-- **DevOps:** Docker · GitHub Actions · nginx · Prometheus · Grafana
-- **Testing:** Jest · Vitest · pytest · Playwright
+#### Tools
 
----
-
-### Currently working on
-
-- Finishing Vendora (reports and background jobs)
-- Putting live demos online for my main projects
+JavaScript, Python, SQL. React, Node.js/Express, FastAPI, Django. PostgreSQL, MySQL, MongoDB,
+Redis. Kafka, Spark, HDFS. scikit-learn, XGBoost, PyTorch. Docker, GitHub Actions, nginx.
+Jest, Vitest, pytest, Playwright.
