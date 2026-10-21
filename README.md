@@ -1,43 +1,42 @@
-### Rachid
+### Rachid Bijigune
 
-Full stack developer from Morocco, with a background in big data and machine learning.
+Full-stack developer from Morocco with a background in Big Data and machine learning. I build web applications that connect reliable backend systems with useful data products.
 
-I hold a Bachelor of Technology in Big Data from EST Fkih Ben Salah and a Diplôme de Développement
-Digital from ISTA Tiznit. Before graduating, I did a three-month internship at OCP Group in
-Khouribga, working on predictive maintenance and IT incident classification.
+I'm interested in opportunities in **Full-Stack Development, Data Engineering, and Applied Machine Learning**.
 
-Most of what I build is a web app with a data or ML part behind it. I'm looking for a full stack,
-data engineering or ML engineering role.
+## Featured Projects
 
-#### Projects
+### [Real-Time E-Commerce Analytics Platform](https://github.com/bijigunerachid/ecommerce-analytics-platform)
+An e-commerce operations app connected to a streaming analytics pipeline. Business events flow through a transactional outbox into Kafka and Spark Structured Streaming. The pipeline deduplicates events, maintains analytics, stores event history in Parquet, and flags unusual orders and inventory activity.
 
-**[ecommerce-analytics-platform](https://github.com/bijigunerachid/ecommerce-analytics-platform)**
-An e-commerce back office where every change (orders, stock, customers) is published to Kafka and
-processed by Spark Structured Streaming. Events go through a transactional outbox, aggregates are
-deduplicated by event id so the dashboard stays exact when Kafka redelivers, and a few simple
-detectors flag unusual orders and stock write-offs.
-React, Express, PostgreSQL, Kafka, PySpark, Prometheus, Grafana.
+**Stack:** React, Express, PostgreSQL, Kafka, Spark Structured Streaming, Docker, GitHub Actions.
 
-**[b2b-management-platform](https://github.com/bijigunerachid/b2b-management-platform)**
-A back office for a wholesale distributor, plus a portal where its clients order directly. Quotes,
-invoices with Moroccan VAT, partial payments, receivables, purchase orders and a stock ledger.
-It has three models trained on the order history: a 4-week demand forecast used for reordering,
-a late-payment risk score, and product recommendations.
-React, Express, MySQL, scikit-learn.
+### [B2B Management Platform](https://github.com/bijigunerachid/b2b-management-platform)
+A wholesale management application with a staff back office and customer portal. Features include quotes, invoices with Moroccan VAT, partial payments, receivables, purchase orders, stock tracking, and three machine-learning features: demand forecasting, late-payment risk estimation, and customer-specific product recommendations.
 
-**[Vendora](https://github.com/bijigunerachid/Multi-Tenant-E-Commerce-Management-SaaS)** (in progress)
-A multi-tenant SaaS where several businesses manage their stores on one platform, with strict
-tenant isolation and role-based access. Catalog, inventory, customers and
-orders work; reports and background jobs are next.
-React, Express, Prisma, PostgreSQL, Redis.
+**Stack:** React, Express, MySQL, Python, scikit-learn.
 
-**[Segmentation-ISIC-](https://github.com/bijigunerachid/Segmentation-ISIC-)**
-Skin lesion segmentation on ISIC 2018, comparing U-Net, SegNet and DeepLabV3. DeepLabV3 reached
-a Dice score of 0.903 on the test set.
-PyTorch, Streamlit.
+### [Vendora — Multi-Tenant E-Commerce SaaS](https://github.com/bijigunerachid/Multi-Tenant-E-Commerce-Management-SaaS)
+A multi-tenant platform for businesses to manage stores, teams, products, inventory, customers, orders, and analytics. The project includes tenant isolation, role-based permissions, subscription plans, a trial flow, Stripe billing workflows, background jobs, automated tests, and deployment documentation.
 
-#### Tools
+**Stack:** React, Node.js, Express, PostgreSQL, Prisma, Redis, Docker.
 
-JavaScript, Python, SQL. React, Node.js/Express, FastAPI, Django. PostgreSQL, MySQL, MongoDB,
-Redis. Kafka, Spark, HDFS. scikit-learn, XGBoost, PyTorch. Docker, GitHub Actions, nginx.
-Jest, Vitest, pytest, Playwright.
+### [ISIC Skin Lesion Segmentation](https://github.com/bijigunerachid/Segmentation-ISIC-)
+A computer-vision project comparing U-Net, SegNet, and DeepLabV3 on the ISIC 2018 Task 1 lesion-segmentation benchmark. DeepLabV3 achieved a Dice score of **0.9030** on the reported test set.
+
+**Stack:** Python, PyTorch, Streamlit.
+
+### [Lexora — Legal Office Management System](https://github.com/bijigunerachid/SECURITY-FIRST-LEGAL-OFFICE-MANAGEMENT-SYSTEM)
+A security-first project for a small law office in Morocco, designed for French and Arabic workflows. Current development focuses on identity, sessions, and access controls; it is not yet ready for real client data.
+
+**Stack:** TypeScript, React, Node.js, PostgreSQL, Prisma, Docker.
+
+## Technical Skills
+
+- **Languages:** JavaScript, TypeScript, Python, SQL
+- **Frontend:** React, Vite, Tailwind CSS
+- **Backend:** Node.js, Express, FastAPI, Django
+- **Data:** PostgreSQL, MySQL, MongoDB, Redis, Kafka, Spark, HDFS
+- **AI/ML:** scikit-learn, XGBoost, PyTorch
+- **Engineering:** Docker, GitHub Actions, Jest, Vitest, pytest, Playwright
+
